@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 using SmartHomeSystems;
 
+
 namespace SmartDevices
 {
     class LightFixture : ISmartDevice<LightSystem>
@@ -23,13 +24,27 @@ namespace SmartDevices
             Tube
         }
 
-
+        public bool isOn;
+        public bool motionActivated;
 
         public float intensity;
         public Color color;
         public LightType lightType;
         public LightShape lightShape;
 
+        private Light lightComponent;
+        
+        void Start()
+        {
+            lightComponent = GetComponent<Light>();
+            lightComponent.color = color;
+            lightComponent.intensity = intensity;
+        }
+
+        void TurnOn(bool isOn)
+        {
+
+        }
     }
 
 }
