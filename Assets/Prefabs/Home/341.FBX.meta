@@ -1,0 +1,437 @@
+fileFormatVersion: 2
+guid: 38de40dd31787584095eec02ca9c9f53
+timeCreated: 1486605497
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 0      011
+    100002: 1      011
+    100004: 10     011
+    100006: 11     011
+    100008: 12     011
+    100010: 13     011
+    100012: 14     011
+    100014: 15     011
+    100016: 16     011
+    100018: 17     011
+    100020: 17     012
+    100022: 19     011
+    100024: 2      011
+    100026: 20     011
+    100028: 3      011
+    100030: //RootNode
+    100032: 4      011
+    100034: 5      011
+    100036: 6      011
+    100038: 7      011
+    100040: 8      011
+    100042: 9      011
+    100044: Box105
+    100046: Box106
+    100048: Box107
+    100050: Box108
+    100052: Box109
+    100054: Box110
+    100056: Box111
+    100058: Box112
+    100060: Box113
+    100062: Box114
+    100064: Box115
+    100066: Box116
+    100068: Box117
+    100070: Box118
+    100072: Box119
+    100074: Box120
+    100076: Box121
+    100078: Box122
+    100080: Box123
+    100082: Box124
+    100084: Box125
+    100086: Floor_Object001
+    100088: Floor_Object002
+    100090: Floor_Object003
+    100092: Floor_Object004
+    100094: Floor_Object005
+    100096: Floor_Object006
+    100098: Floor_Object007
+    100100: Floor_Object008
+    100102: Floor_Object009
+    100104: Floor_Object019
+    100106: Floor_Object020
+    100108: Floor_Object021
+    100110: Floor_Object022
+    100112: Floor_Object023
+    100114: Floor_Object024
+    100116: Floor_Object025
+    100118: Floor_Object026
+    100120: Floor_Object027
+    100122: Floor_Object028
+    100124: Floor_Object029
+    100126: Floor_Object030
+    100128: Object001
+    100130: Object002
+    100132: Object003
+    100134: Object004
+    100136: Object005
+    100138: Particle View 002
+    100140: Particle View 003
+    100142: Particle View 004
+    100144: Particle View 005
+    100146: Particle View 006
+    100148: Particle View 007
+    100150: Particle View 01
+    100152: Particle View 01 1
+    100154: Particle View 01 2
+    100156: Particle View 01 3
+    400000: 0      011
+    400002: 1      011
+    400004: 10     011
+    400006: 11     011
+    400008: 12     011
+    400010: 13     011
+    400012: 14     011
+    400014: 15     011
+    400016: 16     011
+    400018: 17     011
+    400020: 17     012
+    400022: 19     011
+    400024: 2      011
+    400026: 20     011
+    400028: 3      011
+    400030: //RootNode
+    400032: 4      011
+    400034: 5      011
+    400036: 6      011
+    400038: 7      011
+    400040: 8      011
+    400042: 9      011
+    400044: Box105
+    400046: Box106
+    400048: Box107
+    400050: Box108
+    400052: Box109
+    400054: Box110
+    400056: Box111
+    400058: Box112
+    400060: Box113
+    400062: Box114
+    400064: Box115
+    400066: Box116
+    400068: Box117
+    400070: Box118
+    400072: Box119
+    400074: Box120
+    400076: Box121
+    400078: Box122
+    400080: Box123
+    400082: Box124
+    400084: Box125
+    400086: Floor_Object001
+    400088: Floor_Object002
+    400090: Floor_Object003
+    400092: Floor_Object004
+    400094: Floor_Object005
+    400096: Floor_Object006
+    400098: Floor_Object007
+    400100: Floor_Object008
+    400102: Floor_Object009
+    400104: Floor_Object019
+    400106: Floor_Object020
+    400108: Floor_Object021
+    400110: Floor_Object022
+    400112: Floor_Object023
+    400114: Floor_Object024
+    400116: Floor_Object025
+    400118: Floor_Object026
+    400120: Floor_Object027
+    400122: Floor_Object028
+    400124: Floor_Object029
+    400126: Floor_Object030
+    400128: Object001
+    400130: Object002
+    400132: Object003
+    400134: Object004
+    400136: Object005
+    400138: Particle View 002
+    400140: Particle View 003
+    400142: Particle View 004
+    400144: Particle View 005
+    400146: Particle View 006
+    400148: Particle View 007
+    400150: Particle View 01
+    400152: Particle View 01 1
+    400154: Particle View 01 2
+    400156: Particle View 01 3
+    2300000: 0      011
+    2300002: 1      011
+    2300004: 10     011
+    2300006: 11     011
+    2300008: 12     011
+    2300010: 13     011
+    2300012: 14     011
+    2300014: 15     011
+    2300016: 16     011
+    2300018: 17     011
+    2300020: 17     012
+    2300022: 19     011
+    2300024: 2      011
+    2300026: 20     011
+    2300028: 3      011
+    2300030: 4      011
+    2300032: 5      011
+    2300034: 6      011
+    2300036: 7      011
+    2300038: 8      011
+    2300040: 9      011
+    2300042: Box105
+    2300044: Box106
+    2300046: Box107
+    2300048: Box108
+    2300050: Box109
+    2300052: Box110
+    2300054: Box111
+    2300056: Box112
+    2300058: Box113
+    2300060: Box114
+    2300062: Box115
+    2300064: Box116
+    2300066: Box117
+    2300068: Box118
+    2300070: Box119
+    2300072: Box120
+    2300074: Box121
+    2300076: Box122
+    2300078: Box123
+    2300080: Box124
+    2300082: Box125
+    2300084: Floor_Object001
+    2300086: Floor_Object002
+    2300088: Floor_Object003
+    2300090: Floor_Object004
+    2300092: Floor_Object005
+    2300094: Floor_Object006
+    2300096: Floor_Object007
+    2300098: Floor_Object008
+    2300100: Floor_Object009
+    2300102: Floor_Object019
+    2300104: Floor_Object020
+    2300106: Floor_Object021
+    2300108: Floor_Object022
+    2300110: Floor_Object023
+    2300112: Floor_Object024
+    2300114: Floor_Object025
+    2300116: Floor_Object026
+    2300118: Floor_Object027
+    2300120: Floor_Object028
+    2300122: Floor_Object029
+    2300124: Floor_Object030
+    2300126: Object001
+    2300128: Object002
+    2300130: Object003
+    2300132: Object004
+    2300134: Object005
+    3300000: 0      011
+    3300002: 1      011
+    3300004: 10     011
+    3300006: 11     011
+    3300008: 12     011
+    3300010: 13     011
+    3300012: 14     011
+    3300014: 15     011
+    3300016: 16     011
+    3300018: 17     011
+    3300020: 17     012
+    3300022: 19     011
+    3300024: 2      011
+    3300026: 20     011
+    3300028: 3      011
+    3300030: 4      011
+    3300032: 5      011
+    3300034: 6      011
+    3300036: 7      011
+    3300038: 8      011
+    3300040: 9      011
+    3300042: Box105
+    3300044: Box106
+    3300046: Box107
+    3300048: Box108
+    3300050: Box109
+    3300052: Box110
+    3300054: Box111
+    3300056: Box112
+    3300058: Box113
+    3300060: Box114
+    3300062: Box115
+    3300064: Box116
+    3300066: Box117
+    3300068: Box118
+    3300070: Box119
+    3300072: Box120
+    3300074: Box121
+    3300076: Box122
+    3300078: Box123
+    3300080: Box124
+    3300082: Box125
+    3300084: Floor_Object001
+    3300086: Floor_Object002
+    3300088: Floor_Object003
+    3300090: Floor_Object004
+    3300092: Floor_Object005
+    3300094: Floor_Object006
+    3300096: Floor_Object007
+    3300098: Floor_Object008
+    3300100: Floor_Object009
+    3300102: Floor_Object019
+    3300104: Floor_Object020
+    3300106: Floor_Object021
+    3300108: Floor_Object022
+    3300110: Floor_Object023
+    3300112: Floor_Object024
+    3300114: Floor_Object025
+    3300116: Floor_Object026
+    3300118: Floor_Object027
+    3300120: Floor_Object028
+    3300122: Floor_Object029
+    3300124: Floor_Object030
+    3300126: Object001
+    3300128: Object002
+    3300130: Object003
+    3300132: Object004
+    3300134: Object005
+    4300000: Box105
+    4300002: 0      011
+    4300004: 1      011
+    4300006: 2      011
+    4300008: 3      011
+    4300010: 4      011
+    4300012: 5      011
+    4300014: 6      011
+    4300016: 7      011
+    4300018: 8      011
+    4300020: 9      011
+    4300022: 10     011
+    4300024: 11     011
+    4300026: 12     011
+    4300028: 13     011
+    4300030: 14     011
+    4300032: 15     011
+    4300034: 16     011
+    4300036: 17     011
+    4300038: 17     012
+    4300040: 19     011
+    4300042: 20     011
+    4300044: Floor_Object001
+    4300046: Floor_Object002
+    4300048: Floor_Object003
+    4300050: Floor_Object004
+    4300052: Floor_Object005
+    4300054: Floor_Object006
+    4300056: Floor_Object007
+    4300058: Floor_Object008
+    4300060: Floor_Object009
+    4300062: Object001
+    4300064: Object002
+    4300066: Object003
+    4300068: Object004
+    4300070: Object005
+    4300072: Floor_Object019
+    4300074: Floor_Object020
+    4300076: Floor_Object021
+    4300078: Floor_Object022
+    4300080: Floor_Object023
+    4300082: Floor_Object024
+    4300084: Floor_Object025
+    4300086: Floor_Object026
+    4300088: Floor_Object027
+    4300090: Floor_Object028
+    4300092: Floor_Object029
+    4300094: Floor_Object030
+    4300096: Box106
+    4300098: Box107
+    4300100: Box108
+    4300102: Box109
+    4300104: Box110
+    4300106: Box111
+    4300108: Box112
+    4300110: Box113
+    4300112: Box114
+    4300114: Box115
+    4300116: Box116
+    4300118: Box117
+    4300120: Box118
+    4300122: Box119
+    4300124: Box120
+    4300126: Box121
+    4300128: Box122
+    4300130: Box123
+    4300132: Box124
+    4300134: Box125
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
