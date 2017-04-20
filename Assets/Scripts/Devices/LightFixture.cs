@@ -3,48 +3,68 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
-using SmartHomeSystems;
+using SmartHome.Systems;
 
 
-namespace SmartDevices
+namespace SmartHome.Devices.Virtual
 {
-    class LightFixture : ISmartDevice<LightSystem>
+
+    [RequireComponent(typeof(Light))]
+    public class LightFixture : SmartDevice
     {
-        public enum LightType
-        {
-            Incandescent,
-            Flourescent,
-            LED,
-        }
 
-        public enum LightShape
-        {
-            Normal,
-            Flood,
-            Tube
-        }
+        private bool isOn;
 
-        public bool isOn;
-        public bool motionActivated;
+        private float intensity;
+        private float range;
+        private UnityEngine.Color color;
 
-        public float intensity;
-        public Color color;
-        public LightType lightType;
-        public LightShape lightShape;
 
         private Light lightComponent;
         
         void Start()
         {
-            lightComponent = GetComponent<Light>();
-            lightComponent.color = color;
-            lightComponent.intensity = intensity;
+            this.DevInfo = new DeviceInfo(this.GetType(), SH_SystemType.Lighting);
+
+            lightComponent = this.gameObject.GetComponentInChildren<Light>();
         }
 
-        void TurnOn(bool isOn)
+        //SETTERS
+
+        public void SetEnable(bool on)
         {
-
+            isOn = on;
+            lightComponent.enabled = isOn;
         }
+
+
+        public void SetIntensity(float intensity)
+        {
+            lightComponent.intensity = intensity/20;
+        }
+
+        public void SetColor(Color col)
+        {
+            color = col;
+            lightComponent.color = color;
+        }
+
+        public Color GetColor()
+        {
+            return color;
+        }
+
+        public bool GetEnable()
+        {
+            return isOn;
+        }
+
+        public float GetIntensity()
+        {
+            return intensity;
+        }
+        
+
     }
 
 }

@@ -1,10 +1,12 @@
-﻿
-using System;
-using SmartHomeSystems;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using SmartHome.Systems;
 
-namespace SmartDevices {
-    class MotionSensor : ISmartDevice<SecuritySystem>
+namespace SmartHome.Devices.Virtual
+{
+    public class MotionSensor : SmartDevice
     {
         public enum DetectionShape
         {
@@ -13,21 +15,35 @@ namespace SmartDevices {
             Sphere
         }
 
+        [Header("Sensor Shape")]
         public DetectionShape shape;
         public float range;
+        [Range(0, 180)]
         public float anglePeripheral;
-        private bool isTriggered;
-        private LayerMask detectableLayers = LayerMask.GetMask("Player", "Badguy");
 
+        public bool isTriggered = false;
+        private LayerMask detectableLayers;
+        [SerializeField]
+        string[] listOfDetectableLayers = { "Player", "BadGuy" };
+
+        
         public void Start()
         {
+            this.DevInfo = new DeviceInfo(this.GetType(), DevInfo.Name, DevInfo.GroupName, SH_SystemType.Security);
+
             //initialize detection shapes(?)
+            detectableLayers = LayerMask.GetMask(listOfDetectableLayers);
         }
         void Update()
         {
-            
-            isTriggered = (isEnabled) ? CheckMotion() : false;
+            isTriggered = CheckMotion();
+            Debug.DrawRay(transform.position, transform.forward * range, (isTriggered) ? Color.red : Color.blue);
 
+            if (shape == DetectionShape.Cone)
+                Gizmos.DrawFrustum(transform.position, anglePeripheral, range, 0.0f, 1.0f);
+            else if (shape == DetectionShape.Sphere)
+                Gizmos.DrawSphere(transform.position, range);
+            
         }
 
         private bool CheckMotion()
@@ -35,29 +51,29 @@ namespace SmartDevices {
             switch (shape)
             {
                 case DetectionShape.Line:
-                    return LineCast(); 
+                    return LineCast();
                 case DetectionShape.Cone:
                     return ConeCast();
                 case DetectionShape.Sphere:
-
                     return SphereCast();
                 default:
                     break;
             }
             return false;
+
         }
 
         private bool SphereCast()
         {
             var colliders = Physics.OverlapSphere(transform.position, range, detectableLayers);
-            return (colliders.Length > 0) && IsLineOfSite(colliders);
+            return IsLineOfSight(colliders);
         }
 
-        private bool IsLineOfSite(Collider[] colliders)
+        private bool IsLineOfSight(Collider[] colliders)
         {
-            foreach( var c in colliders)
+            foreach (var c in colliders)
             {
-                if (Physics.Raycast(transform.position, c.transform.position)) 
+                if (Physics.Raycast(transform.position, c.transform.position, detectableLayers))
                     return true;
             }
             return false;
@@ -65,8 +81,9 @@ namespace SmartDevices {
 
         private bool ConeCast()
         {
+
             var colliders = Physics.OverlapSphere(transform.position, range, detectableLayers);
-            return (colliders.Length > 0) && IsLineOfSite(colliders) && IsInView(colliders);
+            return IsLineOfSight(colliders) && IsInView(colliders);
 
         }
 
@@ -75,7 +92,7 @@ namespace SmartDevices {
             foreach (var c in colliders)
             {
                 Vector3 cDirection = c.transform.position - transform.position;
-                if (Vector3.Dot(transform.forward.normalized,cDirection.normalized) <= anglePeripheral)
+                if (Mathf.Abs(Vector3.Dot(transform.forward.normalized, cDirection.normalized)) <= anglePeripheral)
                     return true;
             }
             return false;
@@ -86,5 +103,4 @@ namespace SmartDevices {
             return Physics.Raycast(transform.position, transform.forward, range, detectableLayers);
         }
     }
-
 }

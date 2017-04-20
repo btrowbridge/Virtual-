@@ -6,7 +6,7 @@ public class h005_openAnim_S : MonoBehaviour {
 
     public enum enumType { Drawer, Door }
     public enum enumDir { Left, Right, Middle }
-
+    
     public enumType Type;
     public enumDir Direction;
     public bool open = false;
